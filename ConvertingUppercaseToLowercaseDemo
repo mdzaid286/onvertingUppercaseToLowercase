@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ConvertingUppercaseToLowercaseDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the String: ");
+		
+		String s = scan.nextLine();
+		
+		System.out.println("Old String: " + s);
+		
+		ConvertingUppercaseToLowercase cul = new ConvertingUppercaseToLowercase(); 
+		
+		String result = cul.convertingUppercaseToLowercase(s);
+		
+		System.out.println("New String: " + result);
+		
+		scan.close();
+
+	}
+
+}
